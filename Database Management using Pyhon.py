@@ -1,5 +1,4 @@
 import mysql.connector
-from PyQt5.QtWidgets import QApplication,QWidget,QMainWindow,QPushButton,QLineEdit,QLabel
 import sys
 
 class monitor():
@@ -84,47 +83,4 @@ class monitor():
         return print('Deleted Succesfully')
 
 
-'''while True:
-    user=input('What you wants ')
-    if user=='create':
-        moni.create()
-
-    elif user == 'add column':
-        moni.add_col()
-
-    elif user == 'show entry':
-        moni.content()
-
-    elif user == 'show table':
-        moni.show()
-
-    elif user == 'describe':
-        moni.describ()
-
-    elif user=='quit':
-        break'''
-
-
-class window(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.setGeometry(300,300,300,300)
-        self.setWindowTitle('python')
-        self.create_button()
-
-    def create_button(self):
-        bt1=QPushButton('click me',self)
-        bt1.move(200,200)
-        bt1.clicked.connect(moni.create)
-
-        label=QLabel('name',self)
-        label.move(100,100)
-        le=QLineEdit(self)
-
 moni=monitor()
-app=QApplication([])
-win=window()
-win.show()
-sys.exit(app.exec_())
-
-
