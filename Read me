@@ -1,3 +1,0 @@
-Here I first install the selenium pypi module to use the selenium with python.Than installing the webbrowser,so that we can control the site events,Here  the main  challenge is to scrap the site to get the data but I am able to solve these.
-As improvement ,there is something like making code more easy or defined.
-As for the retailors,we can do some automation on the site,storing data etc.
